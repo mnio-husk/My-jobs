@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/MetroMsk/lib/map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/MetroMsk/lib/mapMetroMsk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/MetroMsk/src/main/java/IndexStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/MetroMsk/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/MetroMsk/src/main/java/Parser.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="maven-compiler-11" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bSLc7xT2qrScqhRKSh7ABJpnAW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SPBMetro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in SPBMetro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SPBMetro" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRoutecCalculator.testCalculateDuration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SPBMetro" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRoutecCalculator" />
+      <option name="METHOD_NAME" value="testCalculateDuration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestRoutecCalculator.testCalculateDuration" />
+        <item itemvalue="JUnit.All in SPBMetro" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="" />
+      <created>1559569584327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559569584327</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Task 8.2 &quot;Metro&quot;">
+      <created>1588620718282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588620718282</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Task 8.2 &quot;Metro&quot;">
+      <created>1588620755101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588620755101</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Task 8.2 &quot;Metro&quot;">
+      <created>1588787752048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588787752048</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Task 8.2 &quot;Metro&quot;">
+      <created>1589010303727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589010303727</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Task 8.3 &quot;MetroSPB&quot;">
+      <created>1589103036384</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589103036384</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Task 8.3 &quot;MetroSPB&quot;">
+      <created>1589303418885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589303418885</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task 8.3 &quot;MetroSPB&quot;">
+      <created>1589386107071</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589386107071</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Task 8.2 &quot;Metro&quot;" />
+    <MESSAGE value="Task 8.3 &quot;MetroSPB&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 8.3 &quot;MetroSPB&quot;" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588620250093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588620250093" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588657438819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1588657438819" />
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1589386104420">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589386104420" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1589475413024">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589475413024" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1589386725196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589386725196" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1589386725195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589386725195" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1589386725195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589386725195" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1589386725195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589386725195" />
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom" timestamp="1589306185333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589306185333" />
+    <state width="1322" height="216" key="GridCell.Tab.1.center" timestamp="1589306185333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589306185333" />
+    <state width="1322" height="216" key="GridCell.Tab.1.left" timestamp="1589306185333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589306185333" />
+    <state width="1322" height="216" key="GridCell.Tab.1.right" timestamp="1589306185333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="216" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589306185333" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1589098288363">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589098288363" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1589386110234">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589386110234" />
+    <state x="65" y="0" key="new project wizard" timestamp="1589475413988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1589475413988" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/RouteCalculator.java</url>
+          <line>140</line>
+          <properties class="RouteCalculator" method="getRouteWithTwoConnections">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
