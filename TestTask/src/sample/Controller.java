@@ -1,28 +1,50 @@
 package sample;
 
 import javax.swing.*;
-import java.awt.event.*;
 import java.io.*;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.FileChooser;
+
 
 public class Controller {
     private final String path = "C:\\Users\\Михаил\\Desktop\\text.txt";
+    private TreeSet<String> list;
+    private final String TASK1 = "Задание 1: Заданные два массива " +
+            "строк a1 и a2 возвращают отсортированный массив r в лексикографическом " +
+            "порядке " + "\n" +
+            "\t" + "строк a1, которые являются подстроками строк a2." + "\n" + "\n" +
+            "Пример 1:" + "\n" +
+            "a1 = [\"arp\", \"live\", \"strong\"]\n" +
+            "\n" +
+            "a2 = [\"lively\", \"alive\", \"harp\", \"sharp\", \"armstrong\"]\n" +
+            "\n" +
+            "returns [\"arp\", \"live\", \"strong\"]" + "\n" +
+            "Пример 2: " + "\n" +
+            "a1 = [\"tarp\", \"mice\", \"bull\"]\n" +
+            "\n" +
+            "a2 = [\"lively\", \"alive\", \"harp\", \"sharp\", \"armstrong\"]\n" +
+            "\n" +
+            "returns []" + "\n" +
+            "Будьте осторожны: r должен быть без дубликатов.";
+    private final String TASK2 = "Задание 2: напишите номер в развернутом виде\n" +
+            "\n" +
+            "Вам будет дано число, и вам нужно будет вернуть его в виде строки в развернутом виде. " + "\n" +
+            "Например:" + "\n" +
+            "expanded(12); # Should return \"10 + 2\"" + "\n" +
+            "expanded(42); # Should return \"40 + 2\"" + "\n" +
+            "expandedm(70304); # Should return \"70000 + 300 + 4\"" + "\n" +
+            "Примечание: все числа будут целыми числами больше 0.";
+
 
     @FXML
     private ResourceBundle resources;
@@ -51,31 +73,7 @@ public class Controller {
 
     @FXML
     void initialize() {
-        ComboBox.getItems().addAll("Задание 1: Заданные два массива " +
-                        "строк a1 и a2 возвращают отсортированный массив r в лексикографическом " +
-                        "порядке " + "\n" +
-                        "\t" + "строк a1, которые являются подстроками строк a2." + "\n" + "\n" +
-                        "Пример 1:" + "\n" +
-                        "a1 = [\"arp\", \"live\", \"strong\"]\n" +
-                        "\n" +
-                        "a2 = [\"lively\", \"alive\", \"harp\", \"sharp\", \"armstrong\"]\n" +
-                        "\n" +
-                        "returns [\"arp\", \"live\", \"strong\"]" + "\n" +
-                        "Пример 2: " + "\n" +
-                        "a1 = [\"tarp\", \"mice\", \"bull\"]\n" +
-                        "\n" +
-                        "a2 = [\"lively\", \"alive\", \"harp\", \"sharp\", \"armstrong\"]\n" +
-                        "\n" +
-                        "returns []" + "\n" +
-                        "Будьте осторожны: r должен быть без дубликатов.",
-                "Напишите номер в развернутом виде\n" +
-                        "\n" +
-                        "Вам будет дано число, и вам нужно будет вернуть его в виде строки в развернутом виде. " + "\n" +
-                        "Например:" + "\n" +
-                        "expanded(12); # Should return \"10 + 2\"" + "\n" +
-                        "expanded(42); # Should return \"40 + 2\"" + "\n" +
-                        "expandedm(70304); # Should return \"70000 + 300 + 4\"" + "\n" +
-                        "Примечание: все числа будут целыми числами больше 0.");
+        ComboBox.getItems().addAll(TASK1, TASK2);
         ComboBox.setOnAction(event -> {
             String textCom = ComboBox.getSelectionModel().getSelectedItem().toString();
             label.setText(textCom);
@@ -100,9 +98,6 @@ public class Controller {
             int ret = fileopen.showDialog(null, "Открыть файл");
             if (ret == JFileChooser.APPROVE_OPTION) {
                 File file = fileopen.getSelectedFile();
-                /*
-                 * Какие-то действия.
-                 */
                 String txt = file.toString();
                 List<String> lines = null;
                 try {
@@ -111,7 +106,7 @@ public class Controller {
                     e.printStackTrace();
                 }
                 String o = "";
-                for(String line: lines){
+                for (String line : lines) {
                     o += line + "\n";
                 }
                 label.setText(o);
@@ -120,9 +115,68 @@ public class Controller {
 
         });
 
+        countUp.setOnAction(event -> {
+            if (label.getText().equals(TASK1)){
+            list = new TreeSet<>();
+            String textLine = lineEnter.getText();
+            String[] textSplit = textLine.split("\\,");
+            for (int i = 0; i < textSplit.length; i++) {
+                list.add(textSplit[i]);
+            }
+            String textSort = "";
+            for (String read : list) {
+                textSort += read + ",";
+            }
+            String textFinish = textSort.substring(0, textSort.length() - 1) + ".";
+            label.setText(textFinish);}
+
+            if(label.getText().equals(TASK2)){
+                String text = "";
+                String numbers = lineEnter.getText();
+                char[] number = String.valueOf(numbers).toCharArray();
+                String fromString;
+                int fromInt;
+                int size = number.length;
+                int count = 1;
+                for (int i = 0; i < number.length; i++) {
+                    fromString = String.valueOf(number[i]);
+                    fromInt = Integer.parseInt(fromString);
+                    int result = fromInt * (int) Math.pow(10, size - count);
+                    text += result + "+";
+                    count++;
+                }
+                String textFinish = text.substring(0, text.length() - 1);
+                label.setText(textFinish);
+            }
+
+        });
+
+
+//        countUp.setOnAction(event -> {
+//            String text = "";
+//            String numbers = lineEnter.getText();
+//            char[] number = String.valueOf(numbers).toCharArray();
+//            String fromString;
+//            int fromInt;
+//            int size = number.length;
+//            int count = 1;
+//            for (int i = 0; i < number.length; i++) {
+//                fromString = String.valueOf(number[i]);
+//                fromInt = Integer.parseInt(fromString);
+//                int result = fromInt * (int) Math.pow(10, size - count);
+//                text += result + "+";
+//                count++;
+//            }
+//            String textFinish = text.substring(0, text.length() - 1);
+//            label.setText(textFinish);
+//
+//
+//        });
+
 
     }
 }
+
 
 
 
