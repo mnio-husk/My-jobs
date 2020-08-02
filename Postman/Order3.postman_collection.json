@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "5e7a778b-c3b7-4364-bafc-5b03d5dd2c27",
+		"name": "Order3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0002",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://markirovka.demo.crpt.tech?omsId=0001&reportId=010290000004722821PluIMr6TsADJM",
+					"protocol": "https",
+					"host": [
+						"markirovka",
+						"demo",
+						"crpt",
+						"tech"
+					],
+					"query": [
+						{
+							"key": "omsId",
+							"value": "0001"
+						},
+						{
+							"key": "reportId",
+							"value": "010290000004722821PluIMr6TsADJM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "336572ce-c611-43c6-84da-6851f50d39ec",
+		"name": "Oder1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CodeMarking",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0002",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"products\" : [ {\r\n    \"gtin\" : \"02900000001947\",\r\n    \"quantity\" : 20,\r\n    \"serialNumberType\": \"SELF_MADE\",\r\n    \"serialNumbers\": [ \"QIQ8BQCXmSJJe\", \"GLTP9kqZn5QRt\", \"2Xg3Cz3KFIjDI\",\"ETpOsXYzKgFJf\",\"TrjipM76LBfkO\",\"ZyLajXcsKCKEt\", \"zXo2z7aAib4f3\",\"kDEGDIQemE9IE\",\"sFHNXi4Ss6D4D\",\"iOpbrH3AAObaw\", \"LL8GyS1szEs8b\",\"DZSzdNOoBZgsW\",\"mpF7K5pY5jBIo\",\"9xiZObR1Lf8tb\", \"zFH93Lrww6dn5\",\"9siRZSs7Jrobq\",\"tp6CYNzDSnk9a\",\"961RmCQ3GFFNQ\", \"xmWOa5g7zbgFm\",\"M3fAgZdGrStA8\"],\r\n    \"templateId\": 1,\r\n    \"exporterTaxpayerId \": \"123456789\"\t\r\n  } ],\r\n    \"contactPerson\":\"Иванов П.А.\",        \r\n    \"releaseMethodType\": \"CROSSBORDER\",\r\n    \"createMethodType\": \"SELF_MADE\",\r\n    \"productionOrderId\": \"c6e28332-cf35-4c3a-9e24-50a73aec6604\",\r\n    \"contractNumber\":\"4689725647\",\r\n    \"contractDate\":\"2019-09-12\"  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://intuot.crpt.ru:12011?omsid=0001",
+					"protocol": "https",
+					"host": [
+						"intuot",
+						"crpt",
+						"ru"
+					],
+					"port": "12011",
+					"query": [
+						{
+							"key": "omsid",
+							"value": "0001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

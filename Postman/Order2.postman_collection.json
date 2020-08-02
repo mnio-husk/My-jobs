@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "769f2d9a-ee99-4060-8b2b-a5653b65f1ee",
+		"name": "Order2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting a dates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "0002",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://markirovka.demo.crpt.tech?omsId=0001&orderId=010460742867912021UU79ZaM4uGUlG&gtin=02900000001947",
+					"protocol": "https",
+					"host": [
+						"markirovka",
+						"demo",
+						"crpt",
+						"tech"
+					],
+					"query": [
+						{
+							"key": "omsId",
+							"value": "0001"
+						},
+						{
+							"key": "orderId",
+							"value": "010460742867912021UU79ZaM4uGUlG"
+						},
+						{
+							"key": "gtin",
+							"value": "02900000001947"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
