@@ -56,6 +56,7 @@ public class LoginTest {
         profilePage.topicUse("Тестовое задание. Попов");
         profilePage.bodyUse(profilePage.countLetters());
         profilePage.sendLetters();
+        driver.quit();
 
     }
 }
