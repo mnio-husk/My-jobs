@@ -1,16 +1,12 @@
 package Main;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class ProfilePage {
-
     public WebDriver driver;
 
     public ProfilePage(WebDriver driver) {
@@ -19,31 +15,37 @@ public class ProfilePage {
     }
 
 
-    @FindBy(xpath = "//*[contains(@aria-label, 'Главное меню')]")
+    @FindBy(xpath = "//*[@aria-label = 'Главное меню']")
     private WebElement userMenu;
 
-    @FindBy(xpath = "//*[contains(@class, 'T-I T-I-KE L3')]")
-    private WebElement massageButton;
+    @FindBy(xpath = "//*[@class = 'T-I T-I-KE L3']")
+    private WebElement messageButton;
 
-    @FindBy(xpath = "//*[contains(@name, 'subjectbox')]")
+    @FindBy(xpath = "//*[@name = 'subjectbox']")
     private WebElement topic;
 
-    @FindBy(xpath = "//*[contains(@name, 'to')]")
+    @FindBy(xpath = "//*[@name = 'to']")
     private WebElement nameMail;
 
-    @FindBy(xpath = "//*[contains(@class, 'Am Al editable LW-avf tS-tW')]")
+    @FindBy(xpath = "//*[@class = 'Am Al editable LW-avf tS-tW']")
     private WebElement bodyText;
 
-    @FindBy(xpath = "//*[contains(@class, 'bsU')]")
+    @FindBy(xpath = "//*[@id=\":44\"]/div/div[2]/div")
     private WebElement numberLetters;
 
-    @FindBy(xpath = "//*[contains(@class, 'T-I J-J5-Ji aoO v7 T-I-atl L3')]")
+    @FindBy(xpath = "//*[@class = 'T-I J-J5-Ji aoO v7 T-I-atl L3']")
     private WebElement sendButton;
 
+    //Строка поиска
+    @FindBy(xpath = "//*[@class = 'gb_uf']")
+    private WebElement labelSearch;
 
+    //Кнопка поиска
+    @FindBy(xpath = "//*[@class = 'gb_Df gb_Ef']")
+    private WebElement buttonSearch;
 
-    public void userMassage() {
-        massageButton.click();
+    public void userMessage() {
+        messageButton.click();
     }
 
     public void topicUse(String text) {
@@ -51,24 +53,28 @@ public class ProfilePage {
         topic.sendKeys(text);
     }
 
-    public void nameUse(String name){
+    public void nameUse(String name) {
         nameMail.click();
         nameMail.sendKeys(name);
     }
 
-    public void bodyUse(String text){
+    public void bodyUse(String text) {
         bodyText.click();
         bodyText.sendKeys(text);
     }
 
-    public String countLetters(){
-       String number = numberLetters.getText();
-       return number;
+    public String countLetters() {
+        String number = numberLetters.getText();
+        return number;
     }
 
-    public void sendLetters(){
+    public void sendLetters() {
         sendButton.click();
-
+    }
+    public void searchMessage(String name){
+        labelSearch.click();
+        labelSearch.sendKeys(name);
+        buttonSearch.click();
     }
 }
 

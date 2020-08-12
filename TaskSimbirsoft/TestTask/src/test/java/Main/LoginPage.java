@@ -6,55 +6,37 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    /**
-     * конструктор класса, занимающийся инициализацией полей класса
-     */
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    /**
-     * определение локатора поля ввода логина
-     */
-    @FindBy(xpath = "//*[contains(@id, 'identifierId')]")
+    @FindBy(xpath = "//*[@id = 'identifierId']")
     private WebElement loginField;
-    /**
-     * определение локатора кнопки входа в аккаунт
-     */
-    @FindBy(xpath = "//*[contains(text(), 'Далее')]/..")
+
+    @FindBy(xpath = "//*[text() = 'Далее']/..")
     private WebElement loginBtn;
-    /**
-     * определение локатора поля ввода пароля
-     */
-    @FindBy(xpath = "//*[contains(@name, 'password')]")
+
+    @FindBy(xpath = "//*[@name = 'password']")
     private WebElement passwdField;
 
-    @FindBy(xpath = "//*[contains(@id, 'passwordNext')]")
+    @FindBy(xpath = "//*[@id = 'passwordNext']")
     private WebElement loginBtnPass;
 
-    /**
-     * метод для ввода логина
-     */
     public void inputLogin(String login) {
         loginField.sendKeys(login);
     }
 
-    /**
-     * метод для ввода пароля
-     */
     public void inputPasswd(String passwd) {
         passwdField.sendKeys(passwd);
     }
 
-    /**
-     * метод для осуществления нажатия кнопки входа в аккаунт
-     */
     public void clickLoginBtn() {
         loginBtn.click();
     }
+
     public void clickLoginBtnPassword() {
         loginBtnPass.click();
     }
