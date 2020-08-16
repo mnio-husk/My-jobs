@@ -30,7 +30,7 @@ public class ProfilePage {
     @FindBy(xpath = "//*[@class = 'Am Al editable LW-avf tS-tW']")
     private WebElement bodyText;
 
-    @FindBy(xpath = "//*[@id=\":44\"]/div/div[2]/div")
+    @FindBy(xpath = "//*[@id=\":d9\"]/tbody")
     private WebElement numberLetters;
 
     @FindBy(xpath = "//*[@class = 'T-I J-J5-Ji aoO v7 T-I-atl L3']")
@@ -63,15 +63,23 @@ public class ProfilePage {
         bodyText.sendKeys(text);
     }
 
-    public String countLetters() {
-        String number = numberLetters.getText();
+    public String countLetters(String name) {
+        int count = 0;
+        String[] split = numberLetters.getText().split("\\s");
+        for (int i = 0; i < split.length; i++) {
+            if (split[i].equals(name)) {
+                count++;
+            }
+        }
+        String number = Integer.toString(count);
         return number;
     }
 
     public void sendLetters() {
         sendButton.click();
     }
-    public void searchMessage(String name){
+
+    public void searchMessage(String name) {
         labelSearch.click();
         labelSearch.sendKeys(name);
         buttonSearch.click();
